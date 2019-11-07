@@ -84,7 +84,7 @@ class Facebook {
         };
 
         if (window.document.getElementById('facebook-jssdk')) {
-          return resolve();
+          return resolve(window.FB);
         }
 
         const js = window.document.createElement('script');
